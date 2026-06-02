@@ -2,7 +2,7 @@
     import Delete from "./Delete.svelte";
     import Edit from "./Edit.svelte";
     import Create from "./Create.svelte";
-    import { marcaModel } from "./marca.svelte";
+    import { marcaModel } from "./marcas.svelte";
     import { onMount } from "svelte";
 
     onMount(async () => {
