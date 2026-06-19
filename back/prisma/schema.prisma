@@ -36,3 +36,16 @@ model Marca {
   createdAt DateTime @default(now()) @db.Timestamptz(3)
   updatedAt DateTime @updatedAt @db.Timestamptz(3)
 }
+
+model Suppliers {
+  id Int @id @default(autoincrement())
+  name String @unique @db.VarChar(255)
+  email String? @unique @db.VarChar(255)
+  phone String? @db.VarChar(20)
+
+  createdAt DateTime @default(now()) @db.Timestamptz(3)
+  updatedAt DateTime @updatedAt @db.Timestamptz(3)
+
+  @@index([id])
+  @@map("suppliers")
+}

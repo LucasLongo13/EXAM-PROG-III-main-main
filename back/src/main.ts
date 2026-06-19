@@ -14,7 +14,7 @@ async function bootstrap() {
     forbidNonWhitelisted: true,
   }))
 
-  await app.listen(process.env.PORT ?? 3000);
+  await app.listen(process.env.PORT ?? 9999);
 
   Logger.log(`App corriendo en el puerto: ${await app.getUrl()}`); 
 }
